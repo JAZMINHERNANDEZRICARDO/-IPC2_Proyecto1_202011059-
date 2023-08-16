@@ -30,6 +30,7 @@ class lista_enlazada:
             print("Usuario: ", actual.nota.Tiempo,
                 " | Titulo: ", actual.nota.Amplitud)
             actual = actual.siguiente
+        print("se carga archivo")
 
 
 class menu_prin:
@@ -50,6 +51,10 @@ class menu_prin:
                     "7. Salida"+"\n")
 
         if int(Opcion)==1:
+           print("OPCION "+Opcion)
+           menu_e = menu_prin()
+           menu_e.CargarArchivo()
+        elif int(Opcion)==2:
            print("OPCION "+Opcion)
            menu_e = menu_prin()
            menu_e.CargarArchivo()
@@ -94,6 +99,21 @@ class menu_prin:
 
 
         print("se carga archivo")
+    def ProcesarArchivo(self):
+       
+      
+       
+
+       ''''def recorrer(self):
+        actual=self.primero
+        while actual != None:
+            print("Usuario: ", actual.nota.Tiempo,
+                " | Titulo: ", actual.nota.Amplitud)
+            actual = actual.siguiente
+        print("se carga archivo")'''
+       
+       
+
 list = lista_enlazada()
 nota1 = nota("123","12","1")
 #n1 = nota(PosicionT,PosicionA,valor)
